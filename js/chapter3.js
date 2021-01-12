@@ -3,6 +3,7 @@
 // var和let的区别在于，var声明的范围是函数作用域，而let声明的范围是块作用域！ 再者，let不会做变量提升！
 //函数作用域和块级作用域的区别：https://blog.csdn.net/luzhaopan/article/details/82288543?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromBaidu-1.control&depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromBaidu-1.control
 //使用let在全局作用域中的变量不会成为window对象的属性，而var则会
+//标签和标签函数。symbol
 
 let pageHtml = `
 <div>
@@ -43,8 +44,8 @@ let taggedResult = simpleTag`${a} + ${b} = ${a+b}`;
 
 //console.log(untaggedResult);
 //console.log(taggedResult);
-
+/* 报错
 var array = new Array();
 for(const propName in window){
   array.append(propName);
-}
+}*/
