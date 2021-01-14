@@ -65,6 +65,15 @@ console.log(matches.input); // cat, bat, sat, fat
 
 matches = pattern.exec(text1);
 console.log(matches);
-console.log(matches.index); // 0
-console.log(pattern.lastIndex); // 记录最后的字符位置
-console.log(matches.input); // cat, bat, sat, fat
+//console.log(matches.index); // 0
+//console.log(pattern.lastIndex); // 记录最后的字符位置
+//console.log(matches.input); // cat, bat, sat, fat
+
+
+
+// 5.3 原始值包装类型
+
+let value = new Object(25);
+console.log(value instanceof String);
+console.log(value instanceof Number);
+console.log(valueof value);
