@@ -76,4 +76,38 @@ console.log(matches);
 let value = new Object(25);
 console.log(value instanceof String);
 console.log(value instanceof Number);
-console.log(valueof value);
+console.log(value.valueOf());
+
+
+
+
+console.log("****************************************");
+
+var uri = "http:// www.baidu.com/illigal value.js#start";
+
+console.log(encodeURI(uri));
+console.log(encodeURIComponent(uri));
+
+var encode_uri = encodeURI(uri);
+var encodeComponent_uri = encodeURIComponent(uri);
+console.log(decodeURI(encode_uri));
+console.log(decodeURIComponent(encode_uri));
+
+console.log(decodeURI(encodeComponent_uri));
+console.log(decodeURIComponent(encodeComponent_uri));
+
+eval("var msg = 'hello world';");    //eval()没有变量提升
+console.log(msg);
+
+let global = function(){
+  return this;
+}();
+
+console.log(typeof global);
+
+let values = [1,2,3,4,5,6,7,8,9];
+
+let max = Math.max(...values);
+console.log(max);
+var rand = Math.random();
+console.log(rand + " " + rand*100000);
